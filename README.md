@@ -4,4 +4,5 @@
 
 - Fix Nav Header
 - Create About Page
+- Create Stats Page
 - Create Video Page
