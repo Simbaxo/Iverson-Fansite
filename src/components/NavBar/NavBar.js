@@ -1,32 +1,24 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './NavBar.css'
 
-class NavBar extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { activeClass: false }
-  }
-
-  toggleNav = () => {
-    this.setState(prevState => ({
-      activeClass: !prevState.activeClass
-    }))
-  }
-
+class NavBar extends Component {
   render() {
     return (
-      <nav className="navbar">
-        <span className="navbar-toggle" onClick={this.toggleNav}>
-          <i className={`fas fa-bars ${this.activeClass ? "" : " active"}`}></i>
-        </span>
-        <a href="/" className="logo">The Answer</a>
-        <ul className="main-nav">
-          <li><a href="/" className="nav-links">Home</a></li>
-          <li><a href="/" className="nav-links">About</a></li>
-          <li><a href="/" className="nav-links">Videos</a></li>
-          <li><a href="/" className="nav-links">Stats</a></li>
-        </ul>
-      </nav>
+      <div>
+        <header>
+          <div className="container">
+            <nav>
+              <h1 className="brand"><a href="#">The Answer</a></h1>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Stats</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
     )
   }
 }

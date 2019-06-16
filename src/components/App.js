@@ -5,8 +5,8 @@ import NavBar from './NavBar/NavBar'
 const App = () => {
   return (
     <div>
-      <BackgroundPage />
       <NavBar />
+      <BackgroundPage />
     </div>
   )
 }
