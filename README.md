@@ -2,7 +2,7 @@
 
 ## To-Do
 
-- Fix Nav Header
+- Fix Slideshow
 - Create About Page
 - Create Stats Page
 - Create Video Page
