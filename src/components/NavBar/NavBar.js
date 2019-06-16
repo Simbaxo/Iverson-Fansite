@@ -8,7 +8,7 @@ class NavBar extends Component {
         <header>
           <div className="container">
             <nav>
-              <h1 className="brand"><a href="#">The Answer</a></h1>
+              <h1 className="brand"><a href="#">The <span>Answer</span></a></h1>
               <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
