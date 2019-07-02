@@ -19,10 +19,11 @@ class NavBar extends Component {
                 </ul>
               </nav>
 
-              <Route exact path="/" component={Home} />
+              {/* Figure Out the Correct Paths */}
+              {/* <Route exact path="/" component={App} />
               <Route path="/about" component={About} />
               <Route path="/video" component={Video} />
-              <Route path="/stats" component={Stats} />
+              <Route path="/stats" component={Stats} /> */}
             </div>
           </header>
         </div>
