@@ -1,24 +1,32 @@
 import React, { Component } from 'react'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './NavBar.css'
 
 class NavBar extends Component {
   render() {
     return (
-      <div>
-        <header>
-          <div className="container">
-            <nav>
-              <h1 className="brand"><a href="#">The <span>Answer</span></a></h1>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">Stats</a></li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-      </div>
+      <Router>
+        <div>
+          <header>
+            <div className="container">
+              <nav>
+                <h1 className="brand"><Link href="/">The <span>Answer</span></Link></h1>
+                <ul>
+                  <li><Link href="/">Home</Link></li>
+                  <li><Link href="/about">About</Link></li>
+                  <li><Link href="/videos">Videos</Link></li>
+                  <li><Link href="/stats">Stats</Link></li>
+                </ul>
+              </nav>
+
+              <Route exact path="/" component={Home} />
+              <Route path="/about" component={About} />
+              <Route path="/video" component={Video} />
+              <Route path="/stats" component={Stats} />
+            </div>
+          </header>
+        </div>
+      </Router>
     )
   }
 }
